@@ -1,12 +1,19 @@
-function drawNum(){
-	return Math.floor(Math.random() * 3) +1;
+function drawFruit(){
+	let fruitNum = Math.floor(Math.random() * 3) +1;
+	if ( fruitNum === 1 ){
+		return "🍒"
+	} else if ( fruitNum === 2  ){
+		return "🍊"
+	} else return "🍇"
+
 }
 
 class App extends React.Component {
 	render() {
-		const s1 = drawNum();
-		const s2 = drawNum();
-		const s3 = drawNum();
+		const s1 = drawFruit();
+		const s2 = drawFruit();
+		const s3 = drawFruit();
+		
 		return (
 			<div>
 				<h1>Slot Machines</h1>
