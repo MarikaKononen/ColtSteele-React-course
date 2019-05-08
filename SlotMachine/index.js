@@ -5,7 +5,6 @@ function drawFruit(){
 	} else if ( fruitNum === 2  ){
 		return "🍊"
 	} else return "🍇"
-
 }
 
 class App extends React.Component {
@@ -17,6 +16,9 @@ class App extends React.Component {
 		return (
 			<div>
 				<h1>Slot Machines</h1>
+				<Machine s1={s1}  s2={s2} s3={s3} />
+				<Machine s1={s1}  s2={s2} s3={s3} />
+				<Machine s1={s1}  s2={s2} s3={s3} />
 				<Machine s1={s1}  s2={s2} s3={s3} />
 			</div>
 		)
