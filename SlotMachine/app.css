@@ -1,0 +1,31 @@
+body{
+    font-family: 'Patrick Hand', cursive;
+}
+h1{
+    font-size: 50px;
+}
+
+.Machine{
+    border: 2px solid black;
+    background: lightsteelblue;
+    margin: 20px;
+    margin-right: 800px;
+}
+
+.Machine-win{
+    font-size: 50px;
+    background: green;
+    color: white;
+    margin-right: 200px;
+    margin-left:200px;
+    text-align: center;
+}
+
+.Machine-lose{
+    font-size: 50px;
+    background: coral;
+    color: white;
+    margin-right: 200px;
+    margin-left:200px;
+    text-align: center;
+}
