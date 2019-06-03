@@ -1,0 +1,11 @@
+.Pokedex-content{
+    margin-top: 60px;
+   
+}
+
+.Pokedex-row{
+    display: flex;
+    align-content: space-between;
+    margin-left: 10%;
+    margin-bottom: 50px; 
+}

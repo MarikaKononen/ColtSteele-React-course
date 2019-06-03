@@ -1,0 +1,39 @@
+.Pokecard-pokecard{
+    background-color: #cc99ff;
+    width:20%;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 5px 20px;
+    font-family: Haettenschweiler;
+    border: 1px solid #600080;
+    
+}
+
+
+
+img{
+    height: 150px;
+    margin: 0;
+}
+h1{
+    color: #600080;
+    font-size: 4rem;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 4px 1px #cc99ff;
+     
+}
+
+h4{
+    color: #600080;
+    font-size: 1.5rem;
+    font-family: Impact;
+    letter-spacing: 3px;
+    text-shadow: 3px 1px white;
+    margin: 0;
+    margin-top: 10px;
+}
+
+p{
+    margin: 5px 0;
+}
