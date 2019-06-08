@@ -23,13 +23,13 @@ class Pokecard extends Component {
         let type = this.props.pokemon.type;
         let exp = this.props.pokemon.base_experience;
         let idWithZeros = paddZeros(id.toString());
-        let url2 = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${idWithZeros}.png`;    
-        let url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png` ;  
-        console.log(url) 
+        let url = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${idWithZeros}.png`;    
+        // let url2 = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png` ;  
+        // console.log(url) 
         return (
             <div className="Pokecard-pokecard">
                 <h4>{name}</h4>
-                <img src={url2} />
+                <img src={url} />
                 <p>Type: {type}</p>
                 <p>EXP: {exp}</p>
             </div>

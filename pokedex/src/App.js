@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 class App extends Component {
   render() { 
@@ -17,7 +17,7 @@ class App extends Component {
     ];
     return (
       <div className="App">
-        <Pokedex pokemons={pokemons} />
+        <Pokegame pokemons={pokemons} />
       </div>
     )
   }

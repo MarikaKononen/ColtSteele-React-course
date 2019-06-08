@@ -1,25 +1,21 @@
 import React, {Component} from 'react';
-import Pokecard from './Pokecard'
-import './Pokedex.css'
+import Pokecard from './Pokecard';
+import './Pokedex.css';
+
 
 class Pokedex extends Component{
+    
     render() {
-       
         return (
           <div className="Pokedex-content">
-              <h1>Pokedex</h1>
-              <div className="Pokedex-row">
-                <Pokecard pokemon={this.props.pokemons[0]} />
-                <Pokecard pokemon={this.props.pokemons[1]} /> 
-                <Pokecard pokemon={this.props.pokemons[2]} /> 
-                <Pokecard pokemon={this.props.pokemons[3]} /> 
+              <div className="Pokedex-result-row">
+                <p style={{ backgroundColor: this.props.isWinner ? "yellowgreen" : "tomato" }} className="Pokedex-result-text ">{ this.props.isWinner ? 'You win!' : 'You lose!' } </p> 
+            
+                <p className="Pokedex-result-exp">Total experience level {this.props.totalExp} </p>
               </div>
-              <div className="Pokedex-row">
-                <Pokecard pokemon={this.props.pokemons[4]} /> 
-                <Pokecard pokemon={this.props.pokemons[5]} />
-                <Pokecard pokemon={this.props.pokemons[6]} /> 
-                <Pokecard pokemon={this.props.pokemons[7]} /> 
-              </div>  
+              <div className="Pokedex-poke-row">
+                {this.props.pokemons.map(poke => <Pokecard key={poke.id} pokemon={poke} />)} 
+              </div>
           </div>
         )
     }

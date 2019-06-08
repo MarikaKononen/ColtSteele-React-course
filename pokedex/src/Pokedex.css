@@ -1,11 +1,63 @@
 .Pokedex-content{
     margin-top: 60px;
+
    
 }
 
-.Pokedex-row{
+.Pokedex-poke-row{
     display: flex;
     align-content: space-between;
     margin-left: 10%;
     margin-bottom: 50px; 
 }
+
+.Pokedex-result-row{
+    text-align: center;
+    
+}
+
+.Pokedex-result-text{
+    margin-left: 42.5%;
+    text-align: center;
+    color: #600080;
+    font-size: 2rem;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 4px 1px white;
+    animation: bounceIn;
+    animation-duration: 2s;
+    border: 1px solid #600080;
+    padding: 2px 0;
+    border-radius: 20px;
+    width:15%;
+
+}
+.Pokedex-green-bg{
+    background-color: yellowgreen;
+}
+.Pokedex-red-bg{
+    background-color: tomato;
+}
+
+.Pokedex-result-exp{
+    color: #600080;
+    font-size: 1.2rem;
+    font-family: 'Arial Narrow Bold';
+    padding: 10px 0 15px 0;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
